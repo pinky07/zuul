@@ -1,20 +1,16 @@
 buildscript {
-    ext {
-        springBootVersion = '1.5.4.RELEASE'
-    }
     repositories {
         mavenCentral()
     }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
 }
 
-apply plugin: 'java'
+plugins {
+    id 'org.springframework.boot' version '1.5.4.RELEASE'
+}
+
+apply plugin: 'java-library'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
-apply plugin: 'maven'
-apply plugin: 'org.springframework.boot'
 
 group = 'com.gft'
 version = '0.0.1-SNAPSHOT'
@@ -37,21 +33,21 @@ ext {
 
 dependencies {
     // Web
-    compile ('org.springframework.boot:spring-boot-starter-web')
-    compile ('org.springframework.boot:spring-boot-starter-actuator')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
 
 	// Security
-    compile ('org.springframework.boot:spring-boot-starter-security')
+    implementation('org.springframework.boot:spring-boot-starter-security')
     
 	// Eureka Client
-	compile ('org.springframework.cloud:spring-cloud-starter-eureka')
+    implementation('org.springframework.cloud:spring-cloud-starter-eureka')
     
 	// Zuul
-	compile ('org.springframework.cloud:spring-cloud-starter-zuul')
-    compile ('com.netflix.netflix-commons:netflix-commons-util')
+    implementation('org.springframework.cloud:spring-cloud-starter-zuul')
+    implementation('com.netflix.netflix-commons:netflix-commons-util')
     
 	// Test
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
