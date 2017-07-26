@@ -1,4 +1,4 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://criprj:11000/
+      defaultZone: http://10.200.202.122:11000/eureka
