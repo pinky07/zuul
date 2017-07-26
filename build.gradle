@@ -8,7 +8,7 @@ plugins {
     id 'org.springframework.boot' version '1.5.4.RELEASE'
 }
 
-apply plugin: 'java-library'
+apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
@@ -33,21 +33,21 @@ ext {
 
 dependencies {
     // Web
-    implementation('org.springframework.boot:spring-boot-starter-web')
-    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 
 	// Security
-    implementation('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-security')
     
 	// Eureka Client
-    implementation('org.springframework.cloud:spring-cloud-starter-eureka')
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
     
 	// Zuul
-    implementation('org.springframework.cloud:spring-cloud-starter-zuul')
-    implementation('com.netflix.netflix-commons:netflix-commons-util')
+    compile('org.springframework.cloud:spring-cloud-starter-zuul')
+    compile('com.netflix.netflix-commons:netflix-commons-util')
     
 	// Test
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
