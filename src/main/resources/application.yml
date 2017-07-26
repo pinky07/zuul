@@ -1,8 +1,10 @@
 spring:
+  profiles:
+    active: default,local
   application:
     name: zuul
 server:
-  port: 8888
+  port: 11001
   use-forward-headers: true
 zuul:
   add-host-header: true
@@ -25,9 +27,6 @@ zuul:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:11000/eureka/
 security:
   basic:
     enabled: false
