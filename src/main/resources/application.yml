@@ -4,7 +4,6 @@ spring:
   application:
     name: zuul
 server:
-  port: 11001
   use-forward-headers: true
 zuul:
   add-host-header: true
