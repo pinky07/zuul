@@ -66,10 +66,6 @@ task buildDocker(type: Docker, dependsOn: build) {
     push = false // Would push to a Docker Hub account
     applicationName = jar.baseName
     addFile {
-        from
-        rename {''}
-    }
-    addFile {
         from jar
         rename {'app.jar'}
     }
