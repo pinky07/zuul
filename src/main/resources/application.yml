@@ -17,11 +17,11 @@ zuul:
       sensitive-headers:
     me:
       path: /me/**
-      service-id: employees-v1
+      service-id: employeeAppraisals-v1
       strip-prefix: false
     employees:
       path: /employees/**
-      service-id: employees-v1
+      service-id: employeeAppraisals-v1
       strip-prefix: false
 eureka:
   instance:
