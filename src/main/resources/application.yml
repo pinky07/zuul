@@ -23,6 +23,10 @@ zuul:
       path: /employees/**
       service-id: employeeAppraisals-v1
       strip-prefix: false
+    relationships:
+      path: /relationships/**
+      service-id: employeeAppraisals-v1
+      strip-prefix: false
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5
