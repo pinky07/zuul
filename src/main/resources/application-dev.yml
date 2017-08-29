@@ -2,8 +2,8 @@ server:
   port: 11002
 eureka:
   instance:
-    ipAddress: 10.200.202.122
+    ipAddress: 10.200.220.130
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://10.200.202.122:11001/eureka
+      defaultZone: http://10.200.220.130:11001/eureka
