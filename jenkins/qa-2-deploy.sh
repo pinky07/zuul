@@ -1,10 +1,10 @@
 #!/bin/sh
 #
 
-IMAGE_NAME='com.gft.zuul.ci:latest'
+IMAGE_NAME='com.gft.zuul.qa:latest'
 echo 'Launching new container based on image' $IMAGE_NAME '...'
 
-docker run -e 'SPRING_PROFILES_ACTIVE=default,dev' -d -p 11002:11002 $IMAGE_NAME
+docker run -e 'SPRING_PROFILES_ACTIVE=default,qa' -d -p 11022:11022 $IMAGE_NAME
 
 echo 'Waiting 20s for APP container to start...'
 sleep 20s

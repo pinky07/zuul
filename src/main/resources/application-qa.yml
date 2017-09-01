@@ -4,6 +4,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://10.200.220.130:11001/eureka
+      defaultZone: http://10.200.220.130:11021/eureka
 server:
-  port: 11002
+  port: 11022
+

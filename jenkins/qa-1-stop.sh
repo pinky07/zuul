@@ -114,8 +114,8 @@ cleanUpDocker
 
 # Stop application
 echo 'Removing previous app image and containers...'
-removeContainer 'com.gft.zuul.ci' 'latest'
-removeImage 'com.gft.zuul.ci' 'latest'
+removeContainer 'com.gft.zuul.qa' 'latest'
+removeImage 'com.gft.zuul.qa' 'latest'
 
 #
 # References:
