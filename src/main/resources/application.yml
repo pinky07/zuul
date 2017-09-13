@@ -33,6 +33,8 @@ eureka:
 security:
   basic:
     enabled: false
+ribbon:
+  ReadTimeout: 2000
 logging:
   level:
     org:
