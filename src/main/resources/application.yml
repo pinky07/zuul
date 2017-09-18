@@ -34,7 +34,7 @@ security:
   basic:
     enabled: false
 ribbon:
-  ReadTimeout: 2000
+  ReadTimeout: 5000
 logging:
   level:
     org:
