@@ -8,7 +8,7 @@ buildscript {
 }
 
 plugins {
-    id 'org.springframework.boot' version '1.5.7.RELEASE'
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
 }
 
 apply plugin: 'java'
@@ -32,8 +32,8 @@ repositories {
 }
 
 ext {
-    gVersion = '4.2'
-    springCloudVersion = 'Dalston.SR3'
+    gVersion = '4.2.1'
+    springCloudVersion = 'Dalston.SR4'
 }
 
 dependencies {
