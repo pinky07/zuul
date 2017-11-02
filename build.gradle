@@ -32,7 +32,7 @@ repositories {
 }
 
 ext {
-    gVersion = '4.2.1'
+    gVersion = '4.3'
     springCloudVersion = 'Dalston.SR4'
 }
 
